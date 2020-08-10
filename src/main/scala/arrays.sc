@@ -37,3 +37,27 @@ noZero
 noZero.product
 noZero.sum
 noZero.foreach(println)
+
+val mySeq = Seq(1,2,5,5,6,6,77)
+mySeq
+mySeq.length
+mySeq.min
+mySeq.max
+mySeq.getClass
+
+//generally you import of the beginning of the file
+import scala.collection.mutable
+
+val myMutableSeq = mutable.ArrayBuffer(1,3,6,7,8,8,10)
+myMutableSeq
+
+myMutableSeq.product
+myMutableSeq +=5000
+myMutableSeq ++= Array(3,3,3,10)
+myMutableSeq
+
+//after all this daa shaping and munging and mutating lets copy to inmutable
+
+val immutableSeq = myMutableSeq.toArray //so we cast to immutable array
+immutableSeq.getClass
+immutableSeq
