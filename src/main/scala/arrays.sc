@@ -61,3 +61,10 @@ myMutableSeq
 val immutableSeq = myMutableSeq.toArray //so we cast to immutable array
 immutableSeq.getClass
 immutableSeq
+
+var myVar = 1552
+myVar +=1
+myVar
+
+val myRoundNum = math.round(20.66)
+myRoundNum
