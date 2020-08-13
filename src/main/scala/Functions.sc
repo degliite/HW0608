@@ -144,3 +144,6 @@ def checkName(myName:String, friendName:String) = {
 
 checkName("Valdis", "Liga")
 checkName("Valdis", "Valdis")
+
+// ifs in scala returns always something
+
