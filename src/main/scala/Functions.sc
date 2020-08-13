@@ -1,3 +1,5 @@
+import scala.io.StdIn.readLine
+
 def print2() = {
   println("One Line")
   println("Second Line")
@@ -150,3 +152,11 @@ checkName("Valdis", "Valdis")
 val myMax = 20
 
 BigDecimal.RoundingMode.HALF_UP
+
+val b = 100
+println("enter your number")
+val c = readLine().toInt
+val answer = if (b>c) "B is larger than C" else if (c > b)"C is larger to B" else "B is equal to C"
+println(answer)
+
+// so if/else gives values

@@ -1,6 +1,7 @@
 object FoodCalculator extends App {
 
-  var price = 0.37
+  var price = 0.476
+
   var quantity = 20
 
   //for rounding
@@ -28,3 +29,4 @@ val cost = BigDecimal (price * quantity) setScale(2, BigDecimal.RoundingMode.HAL
   println(s"It will cost $cost to buy ${args(1)} kg of ${args(2)}")
 
 }
+
