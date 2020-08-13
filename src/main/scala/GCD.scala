@@ -42,9 +42,13 @@ object GCD extends App{
     b //we return the value
   }
 
+  def recursiveGCD (x: Long, y: Long): Long = if (y==0) x else recursiveGCD(y, x % y)
+
+  println(recursiveGCD(15,10))
   println(gcdLoop(15,10))
   println(gcdLoop(12,10))
   println(gcdLoop(20,10))
   println(gcdLoop(50,42))
   println(gcdLoop(24,18))
+  println(recursiveGCD(24,18))
 }
