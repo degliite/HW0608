@@ -147,3 +147,6 @@ checkName("Valdis", "Valdis")
 
 // ifs in scala returns always something
 
+val myMax = 20
+
+BigDecimal.RoundingMode.HALF_UP
