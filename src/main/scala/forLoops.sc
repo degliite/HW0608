@@ -38,5 +38,3 @@ prettyPrint("Valdis")
 val myTexts = Seq("Valdis", "Oto", "Liga")
 myTexts.foreach(prettyPrint)
 
-val Arr (Array (20,34,55,12))
-
