@@ -29,3 +29,14 @@ for (item <- Array (10,20,30)) println(s"Answer is $item")
 
 println("*")
 println(" ")
+
+def prettyPrint(anytype: Any): Unit = {
+  println(s"Just a pretty print of $anytype")
+}
+prettyPrint("Valdis")
+
+val myTexts = Seq("Valdis", "Oto", "Liga")
+myTexts.foreach(prettyPrint)
+
+val Arr (Array (20,34,55,12))
+
