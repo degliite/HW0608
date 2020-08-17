@@ -31,7 +31,6 @@ object CountLines extends App {
           println(s"Working now on file $arg")
           println("*" * 40)
           //then we start the inner loop for each file
-          for (line <- Source.fromFile(arg).getLines())
           val f = scala.io.Source.fromFile(arg)
           for ((line, i) <- f.getLines().zipWithIndex) {
             println(s"${line.length.toString}::: $line")
@@ -42,7 +41,7 @@ object CountLines extends App {
               lineNumber = i
             }
           }
-          f.close() //We need to close open files TODO add in try finally
+          f.close() //We need to close open files
         }
 
       } else {
