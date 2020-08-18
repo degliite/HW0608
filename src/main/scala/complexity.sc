@@ -1,3 +1,6 @@
+import scala.Int.int2long
+import scala.util.Random
+
 val max = 10000
 var sum = BigInt(0)
 
@@ -37,4 +40,40 @@ val myGreetings = my500.map(n => s"Hello Mr./Mrs. $n")
 myGreetings.foreach(println)
 myGreetings.getClass
 
+val myNumbers = Seq.range(10,25).filter (n => n%2 == 0)
+val myCubes = myNumbers.map(n => n*n*n)
+myCubes.foreach(println)
+myCubes.foreach(item => println(s"My number is $item"))
+ for (((item, i), original) <- myCubes.zipWithIndex. zip(myNumbers))
+println(s" no. ${i+1}: original Number ${original} cubed => $item")
 
+val myCollection = myCubes.zip(myNumbers)
+ myCollection(0).getClass
+ myCollection.foreach(println)
+myCollection(1)._2
+for (myTuple <- myCollection) {
+  println(myTuple._1, myTuple._2)
+  val (myNum, myCube) = myTuple
+}
+
+myCollection.foreach(myTuple => println(myTuple._1,myTuple._2))
+
+val myBigTuple = ("Valdis",45, "Scala", 3, 3.14)
+myBigTuple
+myBigTuple.getClass
+
+val mySquares = Seq.range(1,10).map(n => n*n).map(n => s"my square $n")
+mySquares.foreach(println)
+
+Math.random()
+Math.random()
+val myRandoms = Seq.range(1,101).filter(_ => Math.random() < 0.20)
+myRandoms.length
+
+Random.between (20,30)
+
+val randomSixth = Seq.range(1,101).filter(_ => Random.between(1,7)==6)
+val everySixth = Seq.range(1,101).filter(n => n%6 ==0 )
+
+randomSixth.length
+everySixth.length
