@@ -77,3 +77,5 @@ val everySixth = Seq.range(1,101).filter(n => n%6 ==0 )
 
 randomSixth.length
 everySixth.length
+
+
